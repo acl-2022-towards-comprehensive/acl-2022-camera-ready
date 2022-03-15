@@ -1,0 +1,165 @@
+
+Model: bert_only hinge_fn: relu, epoch: 1
+2022-03-03 15:08:27.992828  Output analysis: acc: 63.31, precision: 84.49, recall: 66.42, tnr: 50.74, npv: 27.22, confusion: {'tn': 309238, 'fp': 300260, 'fn': 827021, 'tp': 1636153}, 
+2022-03-03 15:08:27.992828  Current validation AUC: 0.6189
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 1
+2022-03-03 16:32:34.308233  Output analysis: acc: 63.23, precision: 84.7, recall: 66.07, tnr: 51.76, npv: 27.4, confusion: {'tn': 315453, 'fp': 294045, 'fn': 835759, 'tp': 1627415}, 
+2022-03-03 16:32:34.308233  Current validation AUC: 0.6237
+
+
+Model: bert_only hinge_fn: relu, epoch: 2
+2022-03-04 00:16:22.227285  Output analysis: acc: 68.05, precision: 83.17, recall: 75.4, tnr: 38.33, npv: 27.83, confusion: {'tn': 233637, 'fp': 375861, 'fn': 605953, 'tp': 1857221}, 
+2022-03-04 00:16:22.227285  Current validation AUC: 0.6028
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 2
+2022-03-04 03:07:19.920723  Output analysis: acc: 65.14, precision: 83.68, recall: 70.21, tnr: 44.67, npv: 27.06, confusion: {'tn': 272238, 'fp': 337260, 'fn': 733824, 'tp': 1729350}, 
+2022-03-04 03:07:19.920723  Current validation AUC: 0.6061
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 3
+2022-03-04 13:34:41.273009  Output analysis: acc: 66.84, precision: 82.97, recall: 73.77, tnr: 38.79, npv: 26.79, confusion: {'tn': 236434, 'fp': 373064, 'fn': 645969, 'tp': 1817205}, 
+2022-03-04 13:34:41.273009  Current validation AUC: 0.5932
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 1
+2022-03-04 15:50:10.300608  Output analysis: acc: 62.4, precision: 84.86, recall: 64.62, tnr: 53.39, npv: 27.19, confusion: {'tn': 325435, 'fp': 284063, 'fn': 871356, 'tp': 1591818}, 
+2022-03-04 15:50:10.300608  Current validation AUC: 0.6234
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 4
+2022-03-04 23:56:19.412619  Output analysis: acc: 68.54, precision: 82.54, recall: 77.07, tnr: 34.1, npv: 26.9, confusion: {'tn': 207831, 'fp': 401667, 'fn': 564900, 'tp': 1898274}, 
+2022-03-04 23:56:19.412619  Current validation AUC: 0.5878
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 2
+2022-03-05 01:52:47.961163  Output analysis: acc: 68.23, precision: 83.17, recall: 75.68, tnr: 38.11, npv: 27.94, confusion: {'tn': 232287, 'fp': 377211, 'fn': 599007, 'tp': 1864167}, 
+2022-03-05 01:52:47.961163  Current validation AUC: 0.6041
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 5
+2022-03-05 10:13:54.874991  Output analysis: acc: 68.9, precision: 82.46, recall: 77.75, tnr: 33.17, npv: 26.94, confusion: {'tn': 202146, 'fp': 407352, 'fn': 548115, 'tp': 1915059}, 
+2022-03-05 10:13:54.874991  Current validation AUC: 0.5861
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 3
+2022-03-05 11:37:47.984687  Output analysis: acc: 67.23, precision: 83.08, recall: 74.24, tnr: 38.91, npv: 27.21, confusion: {'tn': 237151, 'fp': 372347, 'fn': 634521, 'tp': 1828653}, 
+2022-03-05 11:37:47.984687  Current validation AUC: 0.5963
+
+
+Model: bert_only hinge_fn: relu, epoch: 1
+2022-03-07 22:12:44.049688  Output analysis: acc: 63.31, precision: 84.49, recall: 66.42, tnr: 50.74, npv: 27.22, confusion: {'tn': 309238, 'fp': 300260, 'fn': 827021, 'tp': 1636153}, 
+2022-03-07 22:12:44.049688  Current validation AUC: 0.6189
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 1
+2022-03-08 01:42:40.510460  Output analysis: acc: 63.23, precision: 84.7, recall: 66.07, tnr: 51.76, npv: 27.4, confusion: {'tn': 315453, 'fp': 294045, 'fn': 835759, 'tp': 1627415}, 
+2022-03-08 01:42:40.510460  Current validation AUC: 0.6237
+
+
+Model: bert_only hinge_fn: relu, epoch: 2
+2022-03-08 07:30:49.942834  Output analysis: acc: 68.05, precision: 83.17, recall: 75.4, tnr: 38.33, npv: 27.83, confusion: {'tn': 233637, 'fp': 375861, 'fn': 605953, 'tp': 1857221}, 
+2022-03-08 07:30:49.942834  Current validation AUC: 0.6028
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 2
+2022-03-08 11:30:11.372352  Output analysis: acc: 65.14, precision: 83.68, recall: 70.21, tnr: 44.67, npv: 27.06, confusion: {'tn': 272238, 'fp': 337260, 'fn': 733824, 'tp': 1729350}, 
+2022-03-08 11:30:11.372352  Current validation AUC: 0.6061
+
+
+Model: bert_only hinge_fn: relu, epoch: 3
+2022-03-08 16:39:28.534028  Output analysis: acc: 67.27, precision: 83.06, recall: 74.33, tnr: 38.74, npv: 27.19, confusion: {'tn': 236129, 'fp': 373369, 'fn': 632196, 'tp': 1830978}, 
+2022-03-08 16:39:28.534028  Current validation AUC: 0.5956
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 3
+2022-03-08 21:24:05.298050  Output analysis: acc: 66.84, precision: 82.97, recall: 73.77, tnr: 38.79, npv: 26.79, confusion: {'tn': 236434, 'fp': 373064, 'fn': 645969, 'tp': 1817205}, 
+2022-03-08 21:24:05.298050  Current validation AUC: 0.5932
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 4
+2022-03-09 07:19:21.911983  Output analysis: acc: 68.54, precision: 82.54, recall: 77.07, tnr: 34.1, npv: 26.9, confusion: {'tn': 207831, 'fp': 401667, 'fn': 564900, 'tp': 1898274}, 
+2022-03-09 07:19:21.911983  Current validation AUC: 0.5878
+
+
+Model: bert_only hinge_fn: relu, epoch: 1
+2022-03-09 09:15:37.463210  Output analysis: acc: 63.31, precision: 84.49, recall: 66.42, tnr: 50.74, npv: 27.22, confusion: {'tn': 309238, 'fp': 300260, 'fn': 827021, 'tp': 1636153}, 
+2022-03-09 09:15:37.463210  Current validation AUC: 0.6189
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 5
+2022-03-09 17:19:14.944669  Output analysis: acc: 68.9, precision: 82.46, recall: 77.75, tnr: 33.17, npv: 26.94, confusion: {'tn': 202146, 'fp': 407352, 'fn': 548115, 'tp': 1915059}, 
+2022-03-09 17:19:14.944669  Current validation AUC: 0.5861
+
+
+Model: bert_only hinge_fn: relu, epoch: 2
+2022-03-09 18:30:53.910846  Output analysis: acc: 68.05, precision: 83.17, recall: 75.4, tnr: 38.33, npv: 27.83, confusion: {'tn': 233637, 'fp': 375861, 'fn': 605953, 'tp': 1857221}, 
+2022-03-09 18:30:53.910846  Current validation AUC: 0.6028
+
+
+Model: bert_only hinge_fn: relu, epoch: 3
+2022-03-10 03:41:27.783513  Output analysis: acc: 67.27, precision: 83.06, recall: 74.33, tnr: 38.74, npv: 27.19, confusion: {'tn': 236129, 'fp': 373369, 'fn': 632196, 'tp': 1830978}, 
+2022-03-10 03:41:27.783513  Current validation AUC: 0.5956
+
+
+Model: bert_only hinge_fn: relu, epoch: 1
+2022-03-10 16:24:19.821059  Output analysis: acc: 63.67, precision: 84.59, recall: 66.87, tnr: 50.76, npv: 27.49, confusion: {'tn': 309365, 'fp': 300133, 'fn': 816084, 'tp': 1647090}, 
+2022-03-10 16:24:19.821059  Current validation AUC: 0.6233
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 1
+2022-03-10 16:47:00.186157  Output analysis: acc: 63.78, precision: 84.77, recall: 66.83, tnr: 51.46, npv: 27.74, confusion: {'tn': 313655, 'fp': 295843, 'fn': 817151, 'tp': 1646023}, 
+2022-03-10 16:47:00.186157  Current validation AUC: 0.6276
+
+
+Model: bert_only hinge_fn: relu, epoch: 2
+2022-03-11 01:53:04.344831  Output analysis: acc: 65.08, precision: 83.88, recall: 69.88, tnr: 45.72, npv: 27.3, confusion: {'tn': 278637, 'fp': 330861, 'fn': 741979, 'tp': 1721195}, 
+2022-03-11 01:53:04.344831  Current validation AUC: 0.6087
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 2
+2022-03-11 02:01:48.637442  Output analysis: acc: 65.15, precision: 83.95, recall: 69.9, tnr: 45.98, npv: 27.43, confusion: {'tn': 280269, 'fp': 329229, 'fn': 741490, 'tp': 1721684}, 
+2022-03-11 02:01:48.637442  Current validation AUC: 0.6108
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 1
+2022-03-11 19:57:27.885185  Output analysis: acc: 63.78, precision: 84.77, recall: 66.83, tnr: 51.46, npv: 27.74, confusion: {'tn': 313655, 'fp': 295843, 'fn': 817151, 'tp': 1646023}, 
+2022-03-11 19:57:27.885185  Current validation AUC: 0.6276
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 2
+2022-03-12 05:06:18.785786  Output analysis: acc: 65.15, precision: 83.95, recall: 69.9, tnr: 45.98, npv: 27.43, confusion: {'tn': 280269, 'fp': 329229, 'fn': 741490, 'tp': 1721684}, 
+2022-03-12 05:06:18.785786  Current validation AUC: 0.6108
+
+
+Model: bert_only hinge_fn: relu, epoch: 1
+2022-03-12 11:10:23.285079  Output analysis: acc: 63.67, precision: 84.59, recall: 66.87, tnr: 50.76, npv: 27.49, confusion: {'tn': 309365, 'fp': 300133, 'fn': 816084, 'tp': 1647090}, 
+2022-03-12 11:10:23.285079  Current validation AUC: 0.6233
+
+
+Model: bert_only hinge_fn: relu, epoch: 2
+2022-03-12 21:06:45.841665  Output analysis: acc: 65.08, precision: 83.88, recall: 69.88, tnr: 45.72, npv: 27.3, confusion: {'tn': 278637, 'fp': 330861, 'fn': 741979, 'tp': 1721195}, 
+2022-03-12 21:06:45.841665  Current validation AUC: 0.6087
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 1
+2022-03-13 10:48:47.607742  Output analysis: acc: 63.78, precision: 84.77, recall: 66.83, tnr: 51.46, npv: 27.74, confusion: {'tn': 313655, 'fp': 295843, 'fn': 817151, 'tp': 1646023}, 
+2022-03-13 10:48:47.607742  Current validation AUC: 0.6276
+
+
+Model: bert_hinge hinge_fn: relu, epoch: 2
+2022-03-13 20:34:25.709883  Output analysis: acc: 65.15, precision: 83.95, recall: 69.9, tnr: 45.98, npv: 27.43, confusion: {'tn': 280269, 'fp': 329229, 'fn': 741490, 'tp': 1721684}, 
+2022-03-13 20:34:25.709883  Current validation AUC: 0.6108
+
+
+Model: bert_only hinge_fn: relu, epoch: 1
+2022-03-13 23:58:56.797206  Output analysis: acc: 63.67, precision: 84.59, recall: 66.87, tnr: 50.76, npv: 27.49, confusion: {'tn': 309365, 'fp': 300133, 'fn': 816084, 'tp': 1647090}, 
+2022-03-13 23:58:56.797206  Current validation AUC: 0.6233
+
+
+Model: bert_only hinge_fn: relu, epoch: 2
+2022-03-14 09:10:15.143972  Output analysis: acc: 65.08, precision: 83.88, recall: 69.88, tnr: 45.72, npv: 27.3, confusion: {'tn': 278637, 'fp': 330861, 'fn': 741979, 'tp': 1721195}, 
+2022-03-14 09:10:15.143972  Current validation AUC: 0.6087
+

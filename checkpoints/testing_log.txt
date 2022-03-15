@@ -1,0 +1,27 @@
+Model: bert_hinge
+2022-03-05 13:27:18.279265  Output analysis: acc: 64.48, precision: 86.05, recall: 67.45, tnr: 51.23, npv: 26.09, confusion: {'tn': 242850, 'fp': 231185, 'fn': 688118, 'tp': 1425843},
+2022-03-05 13:27:18.279265  Current testing AUC: 0.6289
+Model: bert_only
+2022-03-08 18:21:15.231794  Output analysis: acc: 65.25, precision: 85.69, recall: 68.97, tnr: 48.65, npv: 26.01, confusion: {'tn': 230607, 'fp': 243428, 'fn': 655931, 'tp': 1458030},
+2022-03-08 18:21:15.231794  Current testing AUC: 0.6229
+Model: bert_hinge
+2022-03-09 19:06:53.229327  Output analysis: acc: 65.11, precision: 85.88, recall: 68.55, tnr: 49.75, npv: 26.18, confusion: {'tn': 235834, 'fp': 238201, 'fn': 664839, 'tp': 1449122},
+2022-03-09 19:06:53.229327  Current testing AUC: 0.6278
+Model: bert_hinge
+2022-03-11 03:44:29.545928  Output analysis: acc: 66.02, precision: 85.95, recall: 69.81, tnr: 49.1, npv: 26.72, confusion: {'tn': 232736, 'fp': 241299, 'fn': 638218, 'tp': 1475743}, 
+2022-03-11 03:44:29.545928  Current testing AUC: 0.6317
+Model: bert_only
+2022-03-11 03:56:52.798970  Output analysis: acc: 65.75, precision: 85.8, recall: 69.58, tnr: 48.66, npv: 26.4, confusion: {'tn': 230667, 'fp': 243368, 'fn': 643107, 'tp': 1470854}, 
+2022-03-11 03:56:52.798970  Current testing AUC: 0.6276
+Model: bert_hinge
+2022-03-12 06:47:43.726618  Output analysis: acc: 66.02, precision: 85.95, recall: 69.81, tnr: 49.1, npv: 26.72, confusion: {'tn': 232736, 'fp': 241299, 'fn': 638218, 'tp': 1475743}, 
+2022-03-12 06:47:43.726618  Current testing AUC: 0.6317
+Model: bert_only
+2022-03-12 22:48:22.458029  Output analysis: acc: 65.75, precision: 85.8, recall: 69.58, tnr: 48.66, npv: 26.4, confusion: {'tn': 230667, 'fp': 243368, 'fn': 643107, 'tp': 1470854}, 
+2022-03-12 22:48:22.458029  Current testing AUC: 0.6276
+Model: bert_hinge
+2022-03-13 22:29:36.527582  Output analysis: acc: 66.02, precision: 85.95, recall: 69.81, tnr: 49.1, npv: 26.72, confusion: {'tn': 232736, 'fp': 241299, 'fn': 638218, 'tp': 1475743}, 
+2022-03-13 22:29:36.527582  Current testing AUC: 0.6317
+Model: bert_only
+2022-03-14 10:52:36.034613  Output analysis: acc: 65.75, precision: 85.8, recall: 69.58, tnr: 48.66, npv: 26.4, confusion: {'tn': 230667, 'fp': 243368, 'fn': 643107, 'tp': 1470854}, 
+2022-03-14 10:52:36.034613  Current testing AUC: 0.6276
