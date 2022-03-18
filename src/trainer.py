@@ -1,5 +1,7 @@
 # Author: Zhaoyi Hou (Joey), Yifei Ning (Couson)
 # Last Update: 3/18/2022
+# Inspired by Huggingface Trainer (see below)
+# Reference: https://github.com/huggingface/transformers/blob/v4.17.0/src/transformers/trainer.py#L199
 
 import numpy as np
 import pandas as pd
@@ -245,7 +247,6 @@ class Trainer:
 
         # Loading in the data
         # Incoporate batch_size here if the dataloader is compatible
-        ###### QUESTION: what is flex ######
         if "flex" in self.dataloader_name:
             # train_dataset = pickle.load(
             #     open(self.dataloaders_dir + "train_dataloader_claims.pickle", "rb")
@@ -304,12 +305,8 @@ class Trainer:
         print(
             "==> [Trainer.py: train_model(self)] Current class Weights:", class_weights
         )
-
-        # Beilei: check size before moving to gpu
-        # print("################ size of weights: ", sys.getsizeof(weights))
-
+        
         weights = weights.to(self.device)  # push to GPU
-        # cross_entropy = self.loss # define the loss function
         cross_entropy = nn.NLLLoss(weight=weights)
 
         # setting random seed
@@ -377,12 +374,7 @@ class Trainer:
         #     self.model = BigBirdForPatentPrediction.from_pretrained(
         #         model_str, trainer_config=self.trainer_config
         #     )
-
-        # Beilei: check size before moving to gpu
-        # print("################ size of model: ", sys.getsizeof(self.model))
-
-        # print(
-        # 'model_str:', model_str)
+        
         self.model.cuda(self.device_num)
 
         # Store the average loss after each epoch so we can plot them.
@@ -844,13 +836,6 @@ class Trainer:
         # dataloader dir
         os.system("mkdir -p " + self.dataloaders_dir)
 
-        # [REMOVED] Randomly sample 30000 applications for training - TODO: save app num
-        # seleced_app_num = set(list(train_df.application_number.unique()))
-        # if train_df.application_number.nunique() > self.config['max_app_num']:
-        #     seleced_app_num = set(random.sample(list(train_df.application_number.unique()), self.config['max_app_num']))
-        # print(len(seleced_app_num))
-        # train_df = train_df.loc[train_df.application_number.apply(lambda n: n in seleced_app_num)]
-
         # features to use
         num_feat = (
             self.num_feat
@@ -984,8 +969,6 @@ class Trainer:
                 ]
             )
 
-            # if self.use_hinge_loss:
-            #     train_df = calculate_hinge_constraint(train_df, 'similarity', self.hinge_constraint_factor)
             X_train, y_train = (
                 train_df.loc[:, num_feat + cat_feat],
                 train_df[self.curr_label].values,
@@ -1074,17 +1057,6 @@ class Trainer:
             app_feats_test,
         )
 
-        # We don't use the below code anymore, Move to training process, only store datasets
-        # train_dataloader = prepare_dataloader(
-        #     X_train_tensor, RandomSampler, self.batch_size
-        # )
-        # validation_dataloader = prepare_dataloader(
-        #     X_val_tensor, SequentialSampler, self.batch_size
-        # )
-        # test_dataloader = prepare_dataloader(
-        #     X_test_tensor, SequentialSampler, self.batch_size
-        # )
-
         pickle.dump(
             X_train_tensor,
             open(self.dataloaders_dir + "train_dataloader_claims.pickle", "wb"),
@@ -1102,21 +1074,6 @@ class Trainer:
         )
 
         if tmp_use_app_feats:
-            # pickle.dump(
-            #     app_feats_train,
-            #     open(self.dataloaders_dir + "app_feats_train.pickle", "wb"),
-            #     protocol=4,
-            # )
-            # pickle.dump(
-            #     app_feats_val,
-            #     open(self.dataloaders_dir + "app_feats_val.pickle", "wb"),
-            #     protocol=4,
-            # )
-            # pickle.dump(
-            #     app_feats_test,
-            #     open(self.dataloaders_dir + "app_feats_test.pickle", "wb"),
-            #     protocol=4,
-            # )
             pickle.dump(
                 app_feats_sample,
                 open(self.dataloaders_dir + "app_feats_sample.pickle", "wb"),
