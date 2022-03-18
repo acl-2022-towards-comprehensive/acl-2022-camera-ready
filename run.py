@@ -1,9 +1,11 @@
+# Author: Zhaoyi Hou (Joey), Yifei Ning (Couson)
+# Last Update: 3/18/2022
+
 import sys, getopt
 import pandas as pd
 import json
 from os import listdir
 import pickle
-
 import argparse
 
 sys.path.insert(1, '/home/xuanyu/acl_2022/src/')
