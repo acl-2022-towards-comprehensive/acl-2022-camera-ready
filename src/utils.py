@@ -1,13 +1,14 @@
-import dgl
-import dgl.function as fn
+# Author: Zhaoyi Hou (Joey), Yifei Ning (Couson)
+# Last Update: 3/18/2022
+
 import torch
 import torch.nn as nn
 import re
-from sklearn.utils.class_weight import compute_class_weight
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
 
+from sklearn.utils.class_weight import compute_class_weight
 from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler, FunctionTransformer
@@ -131,15 +132,3 @@ def group_by_app_num(list_of_tuple):
         cur.append([claim_text, app_num, app_feat, original_claim_idx, y])
     ans.append(cur)
     return ans
-
-# def get_training_weight(data, patent_class=None, noForeign=False):
-#     df = pd.read_csv(data, low_memory = True, sep = '\t')
-#     if patent_class is not None:
-#         df = process_class_df(df, patent_class)
-#     if noForeign:
-#         df = process_noForeign_df(df)
-#     y = df[df["dataset"] == "train"]["claim_label_102"].values
-#     class_weights = compute_class_weight(
-#             "balanced", classes=np.unique(y), y=y
-#         )
-#     return class_weights
