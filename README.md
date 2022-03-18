@@ -19,5 +19,5 @@
 - Test / Inference: `python run.py -s test`
 
 ## Contact
-- Codebase: [Zhaoyi H.](joeyhou@seas.upenn.edu), [Yifei N.](y3ning@ucsd.edu)
-- Research / Paper: [Xiaocheng G.](Xiaochen.Gao@rady.ucsd.edu), Jingbo S., Vish K.
+- Codebase: [Zhaoyi H.](mailto:joeyhou@seas.upenn.edu), [Yifei N.](mailto:y3ning@ucsd.edu)
+- Research / Paper: [Xiaocheng G.](mailto:Xiaochen.Gao@rady.ucsd.edu), Jingbo S., Vish K.
