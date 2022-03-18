@@ -1,3 +1,6 @@
+# Author: Zhaoyi Hou (Joey), Yifei Ning (Couson)
+# Last Update: 3/18/2022
+
 import re
 import scipy
 import torch
