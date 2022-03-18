@@ -1,4 +1,4 @@
-# Author: Zhaoyi Hou, Yifei Ning
+# Author: Zhaoyi Hou (Joey), Yifei Ning (Couson)
 # reference: https://github.com/huggingface/transformers/blob/v4.17.0/src/transformers/models/bert/modeling_bert.py#L1501
 
 import torch.nn as nn
@@ -10,11 +10,9 @@ from transformers import (
     BertPreTrainedModel,
     XLNetPreTrainedModel,
     BigBirdPreTrainedModel,
-
     BertForSequenceClassification,
 )
 from transformers.modeling_utils import SequenceSummary
-
 
 class BertForPatentPrediction(BertPreTrainedModel):
     def __init__(self, config, trainer_config):
@@ -114,10 +112,6 @@ class BertForPatentPrediction(BertPreTrainedModel):
         return (logits, transformer_outputs[2:], pooled_output)
 
     def manufacture_constraint(self, vec, device_num, constraint_lst=[0.5], ix_lst=[0]):
-        # First Column is the similarity
-        # TODO: similarity_product, max_score_y, max_score_x
-        # output multiple monotonic constraint
-        # print(len(constraint_lst), len(ix_lst))
         assert len(constraint_lst) == len(ix_lst), "Input Length Mismatch"
 
         factor_tensor = torch.zeros_like(vec)
