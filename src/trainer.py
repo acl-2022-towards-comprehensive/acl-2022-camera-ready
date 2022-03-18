@@ -1,4 +1,6 @@
-# import transformers
+# Author: Zhaoyi Hou (Joey), Yifei Ning (Couson)
+# Last Update: 3/18/2022
+
 import numpy as np
 import pandas as pd
 import string
@@ -9,17 +11,16 @@ import time
 import datetime
 import math
 import pickle
-from ast import literal_eval
+# from ast import literal_eval
 import os
 import sys
 
 # nltk
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk import sent_tokenize
-from nltk.corpus import stopwords
-
-stop_words = set(stopwords.words("english"))
+# import nltk
+# from nltk.tokenize import word_tokenize
+# from nltk import sent_tokenize
+# from nltk.corpus import stopwords
+# stop_words = set(stopwords.words("english"))
 
 # torch
 import torch
@@ -58,16 +59,9 @@ from transformers import XLNetModel, XLNetTokenizer, XLNetForSequenceClassificat
 # from transformers.modeling_bert import BertPreTrainedModel
 from transformers import get_linear_schedule_with_warmup
 
+# src/
 from preprocessing import *
-from models import (
-    BertForPatentPrediction,
-    # XLNetForPatentPrediction,
-    # BigBirdForPatentPrediction,
-    # Bert2LayerForPatentPrediction,
-    # Bert3LayerForPatentPrediction,
-    # Bert4LayerForPatentPrediction,
-)
-
+from models import BertForPatentPrediction
 from reg import *
 
 ######## Trainer Class #########
