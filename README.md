@@ -5,6 +5,9 @@
 ## Paper
 - [Link](https://openreview.net/forum?id=oQ43ZecmCwe) to the paper.
 
+## Data
+- [Link](https://www.dropbox.com/s/jronowy3gau9pku/USPTO-patents-processed.gz?dl=0) to the data
+
 ## Codebase
 - `src/trainer.py`: main handler for training.
 - `src/model.py`: model definitions.
