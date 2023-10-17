@@ -3,7 +3,7 @@
 - **Note: This repo is still under construction**
 
 ## Paper
-- [Link](https://openreview.net/forum?id=oQ43ZecmCwe) to the paper.
+- [Link](https://aclanthology.org/2022.acl-long.28/) to the paper.
 
 ## Data
 - [Link](https://www.dropbox.com/s/jronowy3gau9pku/USPTO-patents-processed.gz?dl=0) to the data
